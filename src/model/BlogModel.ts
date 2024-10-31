@@ -34,4 +34,4 @@ const blogSchema = new mongoose.Schema({
     },
 })
 
-export const blogModel = mongoose.model<iBlog>("blogs", blogSchema);
+export const blogModel = mongoose.model<iBlog>("blogs-as", blogSchema);

@@ -28,4 +28,4 @@ const blogSchema = new mongoose_1.default.Schema({
         default: Date.now,
     },
 });
-exports.blogModel = mongoose_1.default.model("blogs", blogSchema);
+exports.blogModel = mongoose_1.default.model("blogs-as", blogSchema);

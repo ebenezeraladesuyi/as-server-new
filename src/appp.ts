@@ -2,6 +2,7 @@ import express, { Application, Request, Response } from "express";
 import cors from "cors";
 import contactUsRouter from "./routes/ContactRoutes";
 import subscribeRouter from "./routes/SubscribeRouter";
+import blogRouter from "./routes/BlogRouter";
 
 
 const appConf = (app: Application) => {
@@ -10,6 +11,7 @@ const appConf = (app: Application) => {
     // routes
     app.use("/mail", contactUsRouter)
     app.use("/sub", subscribeRouter)
+    app.use("/blog", blogRouter)
 
 
     app.get("/", (req:Request, res: Response): any => {
